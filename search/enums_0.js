@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['csinn_5fapi_5fenum_0',['csinn_api_enum',['../group__DS.html#ga26479387914c43be2a2a940523981bfd',1,'csinn_data_structure.h']]],
+  ['csinn_5fconv_5fmode_5fenum_1',['csinn_conv_mode_enum',['../group__DS.html#ga9ccdbe040be44e3f5f76ddfb17fcc8d9',1,'csinn_data_structure.h']]],
+  ['csinn_5fdebug_5fenum_2',['csinn_debug_enum',['../group__DS.html#ga62e921117e83c401ce5b0a87cdfcb22e',1,'csinn_data_structure.h']]],
+  ['csinn_5fdepth2space_5fenum_3',['csinn_depth2space_enum',['../group__DS.html#gaea5422fe408c3203470bebce77409b91',1,'csinn_data_structure.h']]],
+  ['csinn_5fdtype_5fenum_4',['csinn_dtype_enum',['../group__DS.html#gab862d6f054b1f71cf7d839be5449acfb',1,'csinn_data_structure.h']]],
+  ['csinn_5flayout_5fenum_5',['csinn_layout_enum',['../group__DS.html#gaed8e5f1dad91719dc076de872a0c776c',1,'csinn_data_structure.h']]],
+  ['csinn_5flrn_5fenum_6',['csinn_lrn_enum',['../group__DS.html#ga20019657693a1698a2cf14b4588a9cf1',1,'csinn_data_structure.h']]],
+  ['csinn_5fmem_5ftype_5fenum_7',['csinn_mem_type_enum',['../group__DS.html#ga71a6c9b33f54009f49f7654d045e2596',1,'csinn_data_structure.h']]],
+  ['csinn_5fmode_5fsave_5fenum_8',['csinn_mode_save_enum',['../group__DS.html#ga75746f0bba6a2b8f6c4948c657efbfa0',1,'csinn_data_structure.h']]],
+  ['csinn_5fop_5fenum_9',['csinn_op_enum',['../group__DS.html#gaa828a878d30bc96382ac0d9d343e1045',1,'csinn_data_structure.h']]],
+  ['csinn_5foptimize_5fmethod_5fenum_10',['csinn_optimize_method_enum',['../group__DS.html#ga74e1d6a66b26d5a33d4d9c66bd32478a',1,'csinn_data_structure.h']]],
+  ['csinn_5fpad_5fenum_11',['csinn_pad_enum',['../group__DS.html#ga32d4157cf9934d72813a2911cf1403e7',1,'csinn_data_structure.h']]],
+  ['csinn_5fprofiler_5fenum_12',['csinn_profiler_enum',['../group__DS.html#ga364524e0ff7e1f43c47fc7ce694bbbfe',1,'csinn_data_structure.h']]],
+  ['csinn_5fquant_5fenum_13',['csinn_quant_enum',['../group__DS.html#ga5f2b0a963c7fc51302ab0ec8376b56c8',1,'csinn_data_structure.h']]],
+  ['csinn_5fresize_5fenum_14',['csinn_resize_enum',['../group__DS.html#ga91751cb0c4ab521429c69607ad027027',1,'csinn_data_structure.h']]],
+  ['csinn_5frmode_5fenum_15',['csinn_rmode_enum',['../group__DS.html#ga0d77843e9a525841595eb79ce7ef73cf',1,'csinn_data_structure.h']]],
+  ['csinn_5fstatus_5fenum_16',['csinn_status_enum',['../group__DS.html#ga9d2ed8b0708b20add5ef786780a677f1',1,'csinn_data_structure.h']]]
+];
