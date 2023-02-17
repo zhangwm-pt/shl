@@ -11,21 +11,21 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Apache TVM Documentation &mdash; tvm 0.10.dev1937+g06ee0318d documentation</title>
+  <title>VTA Design and Developer Guide &mdash; tvm 0.10.dev1937+g06ee0318d documentation</title>
   
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/tlcpack_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/tlcpack_theme.css" type="text/css" />
 
   
   
-    <link rel="shortcut icon" href="_static/tvm-logo-square.png"/>
+    <link rel="shortcut icon" href="../../../_static/tvm-logo-square.png"/>
   
 
   
@@ -33,19 +33,20 @@
   
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
     
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
     
-    <script type="text/javascript" src="_static/js/tlcpack_theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installing TVM" href="install/index.html" /> 
+    <script type="text/javascript" src="../../../_static/js/tlcpack_theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="VTA Configuration" href="config.html" />
+    <link rel="prev" title="VTA Installation Guide" href="../install.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -62,7 +63,7 @@
           </div>
 
           <div id="headMenu" class="headerNav">
-            <button type="button" id="closeHeadMenu" class="navCloseBtn"><img src="_static/img/close-icon.svg" alt="Close"></button>
+            <button type="button" id="closeHeadMenu" class="navCloseBtn"><img src="../../../_static/img/close-icon.svg" alt="Close"></button>
              <ul class="nav">
                 <li class="nav-item">
                    <a class="nav-link" href=https://tvm.apache.org/community>Community</a>
@@ -113,7 +114,7 @@
                </div>
           </div>
             <div class="responsiveMenuIcon">
-              <button type="button" id="menuBtn" class="btn-menu"><img src="_static/img/menu-icon.svg" alt="Menu Icon"></button>
+              <button type="button" id="menuBtn" class="btn-menu"><img src="../../../_static/img/menu-icon.svg" alt="Menu Icon"></button>
             </div>
 
             <div class="tlcDropdown">
@@ -155,12 +156,12 @@
           
 
           
-            <a href="#">
+            <a href="../../../index.html">
           
 
           
             
-            <img src="_static/tvm-logo-small.png" class="logo" alt="Logo"/>
+            <img src="../../../_static/tvm-logo-small.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -175,7 +176,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -195,35 +196,45 @@
             
               <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install/index.html">Installing TVM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contribute/index.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install/index.html">Installing TVM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contributor Guide</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">User Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how_to/index.html">How To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorial/index.html">User Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../how_to/index.html">How To Guides</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="dev/tutorial/index.html">Developer Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dev/how_to/how_to.html">Developer How-To Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/tutorial/index.html">Developer Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/how_to/how_to.html">Developer How-To Guide</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Architecture  Guide</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="arch/index.html">Design and Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../arch/index.html">Design and Architecture</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Topic Guides</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="topic/microtvm/index.html">microTVM: TVM on bare-metal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="topic/vta/index.html">VTA: Versatile Tensor Accelerator</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../microtvm/index.html">microTVM: TVM on bare-metal</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">VTA: Versatile Tensor Accelerator</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../install.html">VTA Installation Guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">VTA Design and Developer Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="config.html">VTA Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hardware.html">VTA Hardware Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/index.html">VTA Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#literature">Literature</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Reference Guide</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="reference/langref/index.html">Language Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/api/python/index.html">Python API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/api/links.html">Other APIs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/publications.html">Publications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/langref/index.html">Language Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/api/python/index.html">Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/api/links.html">Other APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/publications.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">Index</a></li>
 </ul>
 
             
@@ -278,15 +289,17 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> <span class="br-arrow">></span></li>
+      <li><a href="../../../index.html">Docs</a> <span class="br-arrow">></span></li>
         
-      <li>Apache TVM Documentation</li>
+          <li><a href="../index.html">VTA: Versatile Tensor Accelerator</a> <span class="br-arrow">></span></li>
+        
+      <li>VTA Design and Developer Guide</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> <img src="_static//img/source.svg" alt="viewsource"/></a>
+            <a href="../../../_sources/topic/vta/dev/index.rst.txt" rel="nofollow"> <img src="../../../_static//img/source.svg" alt="viewsource"/></a>
           
         
       </li>
@@ -299,59 +312,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="apache-tvm-documentation">
-<h1>Apache TVM Documentation<a class="headerlink" href="#apache-tvm-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to the the documentation for Apache TVM, a deep learning compiler that
-enables access to high-performance machine learning anywhere for everyone.
-TVM’s diverse community of hardware vendors, compiler engineers and ML
-researchers work together to build a unified, programmable software stack, that
-enriches the entire ML technology ecosystem and make it accessible to the wider
-ML community. TVM empowers users to leverage community-driven ML-based
-optimizations to push the limits and amplify the reach of their research and
-development, which in turn raises the collective performance of all ML, while
-driving its costs down.</p>
+  <div class="section" id="vta-design-and-developer-guide">
+<h1>VTA Design and Developer Guide<a class="headerlink" href="#vta-design-and-developer-guide" title="Permalink to this headline">¶</a></h1>
+<p>This developer guide details the complete VTA-TVM hardware-software stack.</p>
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/uwsampl/web-data/main/vta/blogpost/vta_stack.png"><img alt="https://raw.githubusercontent.com/uwsampl/web-data/main/vta/blogpost/vta_stack.png" class="align-center" src="https://raw.githubusercontent.com/uwsampl/web-data/main/vta/blogpost/vta_stack.png" style="width: 60%;" /></a>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install/index.html">Installing TVM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contribute/index.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">VTA Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config.html#parameters-overview">Parameters Overview</a></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">User Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how_to/index.html">How To Guides</a></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware.html">VTA Hardware Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardware.html#vta-overview">VTA Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware.html#hls-hardware-source-organization">HLS Hardware Source Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware.html#architectural-overview">Architectural Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware.html#microarchitectural-overview">Microarchitectural Overview</a></li>
 </ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dev/tutorial/index.html">Developer Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dev/how_to/how_to.html">Developer How-To Guide</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Architecture  Guide</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="arch/index.html">Design and Architecture</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Topic Guides</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="topic/microtvm/index.html">microTVM: TVM on bare-metal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="topic/vta/index.html">VTA: Versatile Tensor Accelerator</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Reference Guide</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="reference/langref/index.html">Language Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/api/python/index.html">Python API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/api/links.html">Other APIs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference/publications.html">Publications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</li>
 </ul>
 </div>
 </div>
@@ -366,12 +343,14 @@ driving its costs down.</p>
 
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install/index.html" class="btn btn-neutral float-right" title="Installing TVM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="config.html" class="btn btn-neutral float-right" title="VTA Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="../install.html" class="btn btn-neutral float-left" title="VTA Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
 
-<div id="button" class="backtop"><img src="_static//img/right.svg" alt="backtop"/> </div>
+<div id="button" class="backtop"><img src="../../../_static//img/right.svg" alt="backtop"/> </div>
 <section class="footerSec">
     <div class="footerHeader">
       <ul class="d-flex align-md-items-center justify-content-between flex-column flex-md-row">
