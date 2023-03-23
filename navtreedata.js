@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "CSI-NN2", "index.html", [
+  [ "SHL", "index.html", [
     [ "README", "md_README.html", [
       [ "Use SHL", "md_README.html#autotoc_md0", null ],
       [ "Installation", "md_README.html#autotoc_md1", [
@@ -70,10 +70,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__INIT.html#ga420c0332f58b66d7a705d184595b94cf",
-"group__NN.html#gac29a302a26805370a5915fda8bbcc19f",
-"structcsinn__lrn__params.html#a15d3daf243e65ec0a350c23cc0284ea1",
-"structcsinn__unpooling__params.html#a0bd1c7f1ed7149af769ef1a27a6ad41a"
+"group__INIT.html#ga3b433243ac54bcd9d6b553f3088a4111",
+"group__NN.html#gabaf19eaf67338b8fc9239ad2444990e9",
+"structcsinn__l2n__params.html#aa8d6bd8e48fd6a385df65371fafff4dd",
+"structcsinn__transpose__params.html#a5f469b0d6a2492cb31a93a5958d51927"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

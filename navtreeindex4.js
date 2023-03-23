@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"structcsinn__transpose__params.html#a5f469b0d6a2492cb31a93a5958d51927":[2,3,32,1],
+"structcsinn__transpose__params.html#abd005caa584940b1d7b26bf04bbcbfc6":[2,3,32,0],
+"structcsinn__unpooling__params.html":[2,3,11],
 "structcsinn__unpooling__params.html#a0bd1c7f1ed7149af769ef1a27a6ad41a":[2,3,11,4],
 "structcsinn__unpooling__params.html#a40ead671f38d42d5f86eba597eac0033":[2,3,11,1],
 "structcsinn__unpooling__params.html#a8545cf87eec51196429dff006202aff6":[2,3,11,0],

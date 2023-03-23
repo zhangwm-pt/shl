@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CSI-NN2: NN function</title>
+<title>SHL: NN function</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CSI-NN2<span id="projectnumber">&#160;2.1.x</span>
+   <div id="projectname">SHL<span id="projectnumber">&#160;2.2.x</span>
    </div>
   </td>
  </tr>
@@ -163,6 +163,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3b1915863dfa29c4e2a4c46c5c01b939"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NN.html#ga3b1915863dfa29c4e2a4c46c5c01b939">csinn_cache_matmul</a> (struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *input, struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *output, struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *weight, struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *bias, struct csinn_cache_matmul_params *params)</td></tr>
 <tr class="memdesc:ga3b1915863dfa29c4e2a4c46c5c01b939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache matmul function.  <a href="group__NN.html#ga3b1915863dfa29c4e2a4c46c5c01b939">More...</a><br /></td></tr>
 <tr class="separator:ga3b1915863dfa29c4e2a4c46c5c01b939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga658ce126a06bcaa448c53086424c2660"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NN.html#ga658ce126a06bcaa448c53086424c2660">csinn_cast</a> (struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *input, struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *output, struct <a class="el" href="structcsinn__cast__params.html">csinn_cast_params</a> *params)</td></tr>
+<tr class="memdesc:ga658ce126a06bcaa448c53086424c2660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data convert function.  <a href="group__NN.html#ga658ce126a06bcaa448c53086424c2660">More...</a><br /></td></tr>
+<tr class="separator:ga658ce126a06bcaa448c53086424c2660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga779eaddf26e6704fd3d0d9e11e6236b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NN.html#ga779eaddf26e6704fd3d0d9e11e6236b1">csinn_ceil</a> (struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *input, struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *output, struct <a class="el" href="structcsinn__siso__params.html">csinn_siso_params</a> *params)</td></tr>
 <tr class="memdesc:ga779eaddf26e6704fd3d0d9e11e6236b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate <code>ceil</code> for each element of input tensor.  <a href="group__NN.html#ga779eaddf26e6704fd3d0d9e11e6236b1">More...</a><br /></td></tr>
 <tr class="separator:ga779eaddf26e6704fd3d0d9e11e6236b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1639,6 +1642,51 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">weight</td><td>Pointer to the weight tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bias</td><td>Pointer to the bias tensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>Cache matmul parameter descriptor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On success, the return value is 1. If an error occurred while executing the function, the return value is less than or equal to 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga658ce126a06bcaa448c53086424c2660" name="ga658ce126a06bcaa448c53086424c2660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga658ce126a06bcaa448c53086424c2660">&#9670;&#160;</a></span>csinn_cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int csinn_cast </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcsinn__tensor.html">csinn_tensor</a> *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcsinn__cast__params.html">csinn_cast_params</a> *&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data convert function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>Pointer to the input tensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output</td><td>Pointer to the output tensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>Data convert parameter descriptor </td></tr>
   </table>
   </dd>
 </dl>

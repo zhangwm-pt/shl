@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"structcsinn__l2n__params.html#aa8d6bd8e48fd6a385df65371fafff4dd":[2,3,22,5],
+"structcsinn__lrn__params.html":[2,3,23],
+"structcsinn__lrn__params.html#a0f2f38f9413f2f9efa922cb3d3c18f54":[2,3,23,10],
 "structcsinn__lrn__params.html#a15d3daf243e65ec0a350c23cc0284ea1":[2,3,23,5],
 "structcsinn__lrn__params.html#a34267225a4b8a9feabb70bda21b54c4b":[2,3,23,6],
 "structcsinn__lrn__params.html#a3e81feee8b0f80f259ff96d79262b7c9":[2,3,23,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "structcsinn__topk__params.html#a17b977a658e7e6db6f4a934b40be74e6":[2,3,69,1],
 "structcsinn__topk__params.html#aa2c9317ec7ded0f04d5b1fd184e7ac54":[2,3,69,0],
 "structcsinn__transpose__params.html":[2,3,32],
-"structcsinn__transpose__params.html#a5e3aff74322b02e2c302febd5badfb6d":[2,3,32,2],
-"structcsinn__transpose__params.html#a5f469b0d6a2492cb31a93a5958d51927":[2,3,32,1],
-"structcsinn__transpose__params.html#abd005caa584940b1d7b26bf04bbcbfc6":[2,3,32,0],
-"structcsinn__unpooling__params.html":[2,3,11]
+"structcsinn__transpose__params.html#a5e3aff74322b02e2c302febd5badfb6d":[2,3,32,2]
 };

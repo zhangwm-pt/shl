@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CSI-NN2: include/shl_c920.h Source File</title>
+<title>SHL: include/shl_c920.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CSI-NN2<span id="projectnumber">&#160;2.1.x</span>
+   <div id="projectname">SHL<span id="projectnumber">&#160;2.2.x</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('shl__c920_8h_source.html',''); initRes
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* SHL version 2.1.x */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* SHL version 2.2.x */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef INCLUDE_SHL_C920_H_</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define INCLUDE_SHL_C920_H_</span></div>
@@ -160,10 +160,31 @@ $(document).ready(function(){initNavTree('shl__c920_8h_source.html',''); initRes
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> shl_c920_ncxhwx_gemm_8xpack2n_fp16(__fp16 *dst, <span class="keyword">const</span> __fp16 *sa, <span class="keyword">const</span> __fp16 *sb,</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                        __fp16 *bias, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif  </span><span class="comment">// INCLUDE_SHL_C920_H_</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span> shl_c920_u8_to_f32(<span class="keyword">const</span> uint8_t *input, <span class="keywordtype">float</span> *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                        uint32_t length);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span> shl_c920_i8_to_f32(<span class="keyword">const</span> int8_t *input, <span class="keywordtype">float</span> *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        uint32_t length);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> shl_c920_f32_to_u8(<span class="keyword">const</span> <span class="keywordtype">float</span> *input, uint8_t *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        uint32_t length);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">void</span> shl_c920_f32_to_i8(<span class="keyword">const</span> <span class="keywordtype">float</span> *input, int8_t *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                        uint32_t length);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">void</span> *shl_c920_f32_to_input_dtype(uint32_t index, <span class="keywordtype">float</span> *data, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">float</span> *shl_c920_output_to_f32_dtype(uint32_t index, <span class="keywordtype">void</span> *data, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">struct </span>shl_c920_option {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">struct </span>shl_rvv_option base;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keywordtype">int</span> shl_c920_set_packn_layout(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess, <span class="keywordtype">bool</span> packn_layout);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">struct </span>shl_c920_option *shl_c920_get_graph_option(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">bool</span> shl_c920_get_binary_model_op_init(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> shl_c920_set_binary_model_op_init(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess, <span class="keywordtype">bool</span> value);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif  </span><span class="comment">// INCLUDE_SHL_C920_H_</span></div>
 <div class="ttc" id="acsi__nn_8h_html"><div class="ttname"><a href="csi__nn_8h.html">csi_nn.h</a></div></div>
-<div class="ttc" id="astructcsinn__conv2d__params_html"><div class="ttname"><a href="structcsinn__conv2d__params.html">csinn_conv2d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:552</div></div>
-<div class="ttc" id="astructcsinn__tensor_html"><div class="ttname"><a href="structcsinn__tensor.html">csinn_tensor</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:474</div></div>
+<div class="ttc" id="astructcsinn__conv2d__params_html"><div class="ttname"><a href="structcsinn__conv2d__params.html">csinn_conv2d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:553</div></div>
+<div class="ttc" id="astructcsinn__session_html"><div class="ttname"><a href="structcsinn__session.html">csinn_session</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:502</div></div>
+<div class="ttc" id="astructcsinn__tensor_html"><div class="ttname"><a href="structcsinn__tensor.html">csinn_tensor</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:475</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

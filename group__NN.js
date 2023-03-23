@@ -22,6 +22,7 @@ var group__NN =
     [ "csinn_broadcast_to", "group__NN.html#ga9633baa91bcd89891b270440711d26be", null ],
     [ "csinn_cache_conv1d", "group__NN.html#ga032892aed9b55b0e2db53e55e7e832de", null ],
     [ "csinn_cache_matmul", "group__NN.html#ga3b1915863dfa29c4e2a4c46c5c01b939", null ],
+    [ "csinn_cast", "group__NN.html#ga658ce126a06bcaa448c53086424c2660", null ],
     [ "csinn_ceil", "group__NN.html#ga779eaddf26e6704fd3d0d9e11e6236b1", null ],
     [ "csinn_clip", "group__NN.html#gaa2cf0ea4e0bf96c3a6c618128ec09380", null ],
     [ "csinn_col2im", "group__NN.html#ga56884aa501ada41749e5856319a169ae", null ],

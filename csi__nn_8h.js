@@ -330,6 +330,8 @@ var csi__nn_8h =
     [ "csinn_cache_conv1d", "group__NN.html#ga032892aed9b55b0e2db53e55e7e832de", null ],
     [ "csinn_conv1d_init", "group__INIT.html#gaff4ef279aa8cde5985467d683c875ec4", null ],
     [ "csinn_conv1d", "group__NN.html#ga7003fdae4106b961c1a374dcd724e5fd", null ],
+    [ "csinn_cast_init", "group__INIT.html#gaa730eac8f17ba9f641f5ec15b38d5e66", null ],
+    [ "csinn_cast", "group__NN.html#ga658ce126a06bcaa448c53086424c2660", null ],
     [ "csinn_data_convert_init", "group__INIT.html#ga01bd57321682645bf673f867a7a2950c", null ],
     [ "csinn_data_convert", "group__NN.html#ga4f2bb95b9a5cfd506e73bff7f05ed1a1", null ]
 ];

@@ -546,7 +546,8 @@ var group__DS =
     [ "csinn_rmode_enum", "group__DS.html#ga0d77843e9a525841595eb79ce7ef73cf", [
       [ "CSINN_RM_LAYER", "group__DS.html#gga0d77843e9a525841595eb79ce7ef73cfaee16a614c99cbfa250e8da35134529ee", null ],
       [ "CSINN_RM_CPU_GRAPH", "group__DS.html#gga0d77843e9a525841595eb79ce7ef73cfa6e96287926e9f09c2b59d08ff7681f59", null ],
-      [ "CSINN_RM_NPU_GRAPH", "group__DS.html#gga0d77843e9a525841595eb79ce7ef73cfa7a7864d3ae23f33ffdbbe7c95bdd6e44", null ]
+      [ "CSINN_RM_NPU_GRAPH", "group__DS.html#gga0d77843e9a525841595eb79ce7ef73cfa7a7864d3ae23f33ffdbbe7c95bdd6e44", null ],
+      [ "CSINN_RM_CPU_BASE_HYBRID", "group__DS.html#gga0d77843e9a525841595eb79ce7ef73cfabf647ad8dec03770c2146180c33e3652", null ]
     ] ],
     [ "csinn_mode_save_enum", "group__DS.html#ga75746f0bba6a2b8f6c4948c657efbfa0", [
       [ "CSINN_SAVE_AND_RUN", "group__DS.html#gga75746f0bba6a2b8f6c4948c657efbfa0ad4f5588ece09132baf5a3d5e9f1ac111", null ],

@@ -22,6 +22,7 @@ var group__INIT =
     [ "csinn_broadcast_to_init", "group__INIT.html#ga35b1b41e001720e02810f83173c2951a", null ],
     [ "csinn_cache_conv1d_init", "group__INIT.html#gad57c08f9e4bc353ba8742de7bd7eea89", null ],
     [ "csinn_cache_matmul_init", "group__INIT.html#gacb79e424b25ab76e9a9ed46b9c944d15", null ],
+    [ "csinn_cast_init", "group__INIT.html#gaa730eac8f17ba9f641f5ec15b38d5e66", null ],
     [ "csinn_ceil_init", "group__INIT.html#gab12d1e3f73d8584063ec1b2a0a690008", null ],
     [ "csinn_clip_init", "group__INIT.html#gaaa889474d4ceba12ff92d46445e7af0c", null ],
     [ "csinn_col2im_init", "group__INIT.html#ga6f84b63d84dc614144eb01eba87464d0", null ],

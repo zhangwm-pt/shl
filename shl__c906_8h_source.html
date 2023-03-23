@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CSI-NN2: include/shl_c906.h Source File</title>
+<title>SHL: include/shl_c906.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CSI-NN2<span id="projectnumber">&#160;2.1.x</span>
+   <div id="projectname">SHL<span id="projectnumber">&#160;2.2.x</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('shl__c906_8h_source.html',''); initRes
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* SHL version 2.1.x */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* SHL version 2.2.x */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef INCLUDE_SHL_C906_H_</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define INCLUDE_SHL_C906_H_</span></div>
@@ -608,44 +608,57 @@ $(document).ready(function(){initNavTree('shl__c906_8h_source.html',''); initRes
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="keyword">struct </span>shl_c906_hpm shl_c906_get_hw_perf();</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="keywordtype">int</span> shl_c906_sum_stride_fp16(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *input, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *output,</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="keywordtype">int</span> shl_c906_reduce_sum_fp16(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *input, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *output,</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>                             <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__reduce__params.html">csinn_reduce_params</a> *params);</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="keywordtype">void</span> shl_c906_u8_to_f32(<span class="keyword">const</span> uint8_t *input, <span class="keywordtype">float</span> *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>                        uint32_t length);</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="keywordtype">void</span> shl_c906_i8_to_f32(<span class="keyword">const</span> int8_t *input, <span class="keywordtype">float</span> *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                        uint32_t length);</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="keyword">struct </span><a class="code hl_struct" href="structcsinn__callback.html">csinn_callback</a> *shl_cb_map_c906(<span class="keywordtype">int</span> op, <span class="keywordtype">int</span> dtype);</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="keywordtype">int</span> shl_c906_reg_op(<span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gab862d6f054b1f71cf7d839be5449acfb">csinn_dtype_enum</a> dtype, <span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gaa828a878d30bc96382ac0d9d343e1045">csinn_op_enum</a> op_name, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structcsinn__callback.html#a80ff29f7fc3dbba8932ea0c36746c6e0">init</a>,</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>                    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structcsinn__callback.html#aa4c759a0e3badaf11dc864538a5cec38">exec</a>);</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="keywordtype">int</span> shl_c906_reg_op_est(<span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gab862d6f054b1f71cf7d839be5449acfb">csinn_dtype_enum</a> dtype, <span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gaa828a878d30bc96382ac0d9d343e1045">csinn_op_enum</a> op_name, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structcsinn__callback.html#a03a62db5f887ae9f64ce597612827262">est</a>);</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="preprocessor">#endif  </span><span class="comment">// INCLUDE_SHL_C906_H_</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="keywordtype">void</span> shl_c906_f32_to_u8(<span class="keyword">const</span> <span class="keywordtype">float</span> *input, uint8_t *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                        uint32_t length);</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="keywordtype">void</span> shl_c906_f32_to_i8(<span class="keyword">const</span> <span class="keywordtype">float</span> *input, int8_t *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>                        uint32_t length);</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span> </div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="keyword">struct </span><a class="code hl_struct" href="structcsinn__callback.html">csinn_callback</a> *shl_cb_map_c906(<span class="keywordtype">int</span> op, <span class="keywordtype">int</span> dtype);</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="keywordtype">int</span> shl_c906_reg_op(<span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gab862d6f054b1f71cf7d839be5449acfb">csinn_dtype_enum</a> dtype, <span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gaa828a878d30bc96382ac0d9d343e1045">csinn_op_enum</a> op_name, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structcsinn__callback.html#a80ff29f7fc3dbba8932ea0c36746c6e0">init</a>,</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structcsinn__callback.html#aa4c759a0e3badaf11dc864538a5cec38">exec</a>);</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="keywordtype">int</span> shl_c906_reg_op_est(<span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gab862d6f054b1f71cf7d839be5449acfb">csinn_dtype_enum</a> dtype, <span class="keyword">enum</span> <a class="code hl_enumeration" href="group__DS.html#gaa828a878d30bc96382ac0d9d343e1045">csinn_op_enum</a> op_name, <span class="keywordtype">void</span> *<a class="code hl_variable" href="structcsinn__callback.html#a03a62db5f887ae9f64ce597612827262">est</a>);</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="keyword">struct </span>shl_c906_option {</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keyword">struct </span>shl_rvv_option base;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>};</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="keywordtype">int</span> shl_c906_set_packn_layout(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess, <span class="keywordtype">bool</span> packn_layout);</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="keyword">struct </span>shl_c906_option *shl_c906_get_graph_option(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess);</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="preprocessor">#endif  </span><span class="comment">// INCLUDE_SHL_C906_H_</span></div>
 <div class="ttc" id="acsi__nn_8h_html"><div class="ttname"><a href="csi__nn_8h.html">csi_nn.h</a></div></div>
-<div class="ttc" id="agroup__DS_html_gaa828a878d30bc96382ac0d9d343e1045"><div class="ttname"><a href="group__DS.html#gaa828a878d30bc96382ac0d9d343e1045">csinn_op_enum</a></div><div class="ttdeci">csinn_op_enum</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:126</div></div>
+<div class="ttc" id="agroup__DS_html_gaa828a878d30bc96382ac0d9d343e1045"><div class="ttname"><a href="group__DS.html#gaa828a878d30bc96382ac0d9d343e1045">csinn_op_enum</a></div><div class="ttdeci">csinn_op_enum</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:127</div></div>
 <div class="ttc" id="agroup__DS_html_gab862d6f054b1f71cf7d839be5449acfb"><div class="ttname"><a href="group__DS.html#gab862d6f054b1f71cf7d839be5449acfb">csinn_dtype_enum</a></div><div class="ttdeci">csinn_dtype_enum</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:39</div></div>
-<div class="ttc" id="astructcsinn__broadcast__to__params_html"><div class="ttname"><a href="structcsinn__broadcast__to__params.html">csinn_broadcast_to_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1073</div></div>
-<div class="ttc" id="astructcsinn__callback_html"><div class="ttname"><a href="structcsinn__callback.html">csinn_callback</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:523</div></div>
-<div class="ttc" id="astructcsinn__callback_html_a03a62db5f887ae9f64ce597612827262"><div class="ttname"><a href="structcsinn__callback.html#a03a62db5f887ae9f64ce597612827262">csinn_callback::est</a></div><div class="ttdeci">int(* est)()</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:525</div></div>
-<div class="ttc" id="astructcsinn__callback_html_a80ff29f7fc3dbba8932ea0c36746c6e0"><div class="ttname"><a href="structcsinn__callback.html#a80ff29f7fc3dbba8932ea0c36746c6e0">csinn_callback::init</a></div><div class="ttdeci">int(* init)()</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:524</div></div>
-<div class="ttc" id="astructcsinn__callback_html_aa4c759a0e3badaf11dc864538a5cec38"><div class="ttname"><a href="structcsinn__callback.html#aa4c759a0e3badaf11dc864538a5cec38">csinn_callback::exec</a></div><div class="ttdeci">int(* exec)()</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:526</div></div>
-<div class="ttc" id="astructcsinn__clip__params_html"><div class="ttname"><a href="structcsinn__clip__params.html">csinn_clip_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1080</div></div>
-<div class="ttc" id="astructcsinn__concat__params_html"><div class="ttname"><a href="structcsinn__concat__params.html">csinn_concat_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:779</div></div>
-<div class="ttc" id="astructcsinn__conv1d__params_html"><div class="ttname"><a href="structcsinn__conv1d__params.html">csinn_conv1d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1161</div></div>
-<div class="ttc" id="astructcsinn__conv2d__params_html"><div class="ttname"><a href="structcsinn__conv2d__params.html">csinn_conv2d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:552</div></div>
-<div class="ttc" id="astructcsinn__diso__params_html"><div class="ttname"><a href="structcsinn__diso__params.html">csinn_diso_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:752</div></div>
-<div class="ttc" id="astructcsinn__fc__params_html"><div class="ttname"><a href="structcsinn__fc__params.html">csinn_fc_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:595</div></div>
-<div class="ttc" id="astructcsinn__lrn__params_html"><div class="ttname"><a href="structcsinn__lrn__params.html">csinn_lrn_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:726</div></div>
-<div class="ttc" id="astructcsinn__matmul__params_html"><div class="ttname"><a href="structcsinn__matmul__params.html">csinn_matmul_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:745</div></div>
-<div class="ttc" id="astructcsinn__pad__params_html"><div class="ttname"><a href="structcsinn__pad__params.html">csinn_pad_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:762</div></div>
-<div class="ttc" id="astructcsinn__pool__params_html"><div class="ttname"><a href="structcsinn__pool__params.html">csinn_pool_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:604</div></div>
-<div class="ttc" id="astructcsinn__prelu__params_html"><div class="ttname"><a href="structcsinn__prelu__params.html">csinn_prelu_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:685</div></div>
-<div class="ttc" id="astructcsinn__reduce__params_html"><div class="ttname"><a href="structcsinn__reduce__params.html">csinn_reduce_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1032</div></div>
-<div class="ttc" id="astructcsinn__relu__params_html"><div class="ttname"><a href="structcsinn__relu__params.html">csinn_relu_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:675</div></div>
-<div class="ttc" id="astructcsinn__reshape__params_html"><div class="ttname"><a href="structcsinn__reshape__params.html">csinn_reshape_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:824</div></div>
-<div class="ttc" id="astructcsinn__siso__params_html"><div class="ttname"><a href="structcsinn__siso__params.html">csinn_siso_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:660</div></div>
-<div class="ttc" id="astructcsinn__split__params_html"><div class="ttname"><a href="structcsinn__split__params.html">csinn_split_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:870</div></div>
-<div class="ttc" id="astructcsinn__tensor_html"><div class="ttname"><a href="structcsinn__tensor.html">csinn_tensor</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:474</div></div>
+<div class="ttc" id="astructcsinn__broadcast__to__params_html"><div class="ttname"><a href="structcsinn__broadcast__to__params.html">csinn_broadcast_to_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1074</div></div>
+<div class="ttc" id="astructcsinn__callback_html"><div class="ttname"><a href="structcsinn__callback.html">csinn_callback</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:524</div></div>
+<div class="ttc" id="astructcsinn__callback_html_a03a62db5f887ae9f64ce597612827262"><div class="ttname"><a href="structcsinn__callback.html#a03a62db5f887ae9f64ce597612827262">csinn_callback::est</a></div><div class="ttdeci">int(* est)()</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:526</div></div>
+<div class="ttc" id="astructcsinn__callback_html_a80ff29f7fc3dbba8932ea0c36746c6e0"><div class="ttname"><a href="structcsinn__callback.html#a80ff29f7fc3dbba8932ea0c36746c6e0">csinn_callback::init</a></div><div class="ttdeci">int(* init)()</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:525</div></div>
+<div class="ttc" id="astructcsinn__callback_html_aa4c759a0e3badaf11dc864538a5cec38"><div class="ttname"><a href="structcsinn__callback.html#aa4c759a0e3badaf11dc864538a5cec38">csinn_callback::exec</a></div><div class="ttdeci">int(* exec)()</div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:527</div></div>
+<div class="ttc" id="astructcsinn__clip__params_html"><div class="ttname"><a href="structcsinn__clip__params.html">csinn_clip_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1081</div></div>
+<div class="ttc" id="astructcsinn__concat__params_html"><div class="ttname"><a href="structcsinn__concat__params.html">csinn_concat_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:780</div></div>
+<div class="ttc" id="astructcsinn__conv1d__params_html"><div class="ttname"><a href="structcsinn__conv1d__params.html">csinn_conv1d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1162</div></div>
+<div class="ttc" id="astructcsinn__conv2d__params_html"><div class="ttname"><a href="structcsinn__conv2d__params.html">csinn_conv2d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:553</div></div>
+<div class="ttc" id="astructcsinn__diso__params_html"><div class="ttname"><a href="structcsinn__diso__params.html">csinn_diso_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:753</div></div>
+<div class="ttc" id="astructcsinn__fc__params_html"><div class="ttname"><a href="structcsinn__fc__params.html">csinn_fc_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:596</div></div>
+<div class="ttc" id="astructcsinn__lrn__params_html"><div class="ttname"><a href="structcsinn__lrn__params.html">csinn_lrn_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:727</div></div>
+<div class="ttc" id="astructcsinn__matmul__params_html"><div class="ttname"><a href="structcsinn__matmul__params.html">csinn_matmul_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:746</div></div>
+<div class="ttc" id="astructcsinn__pad__params_html"><div class="ttname"><a href="structcsinn__pad__params.html">csinn_pad_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:763</div></div>
+<div class="ttc" id="astructcsinn__pool__params_html"><div class="ttname"><a href="structcsinn__pool__params.html">csinn_pool_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:605</div></div>
+<div class="ttc" id="astructcsinn__prelu__params_html"><div class="ttname"><a href="structcsinn__prelu__params.html">csinn_prelu_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:686</div></div>
+<div class="ttc" id="astructcsinn__reduce__params_html"><div class="ttname"><a href="structcsinn__reduce__params.html">csinn_reduce_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:1033</div></div>
+<div class="ttc" id="astructcsinn__relu__params_html"><div class="ttname"><a href="structcsinn__relu__params.html">csinn_relu_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:676</div></div>
+<div class="ttc" id="astructcsinn__reshape__params_html"><div class="ttname"><a href="structcsinn__reshape__params.html">csinn_reshape_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:825</div></div>
+<div class="ttc" id="astructcsinn__session_html"><div class="ttname"><a href="structcsinn__session.html">csinn_session</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:502</div></div>
+<div class="ttc" id="astructcsinn__siso__params_html"><div class="ttname"><a href="structcsinn__siso__params.html">csinn_siso_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:661</div></div>
+<div class="ttc" id="astructcsinn__split__params_html"><div class="ttname"><a href="structcsinn__split__params.html">csinn_split_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:871</div></div>
+<div class="ttc" id="astructcsinn__tensor_html"><div class="ttname"><a href="structcsinn__tensor.html">csinn_tensor</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:475</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

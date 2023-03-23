@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CSI-NN2: include/shl_c908.h Source File</title>
+<title>SHL: include/shl_c908.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CSI-NN2<span id="projectnumber">&#160;2.1.x</span>
+   <div id="projectname">SHL<span id="projectnumber">&#160;2.2.x</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('shl__c908_8h_source.html',''); initRes
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * limitations under the License.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* SHL version 2.1.x */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/* SHL version 2.2.x */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef INCLUDE_SHL_C908_H_</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define INCLUDE_SHL_C908_H_</span></div>
@@ -425,38 +425,51 @@ $(document).ready(function(){initNavTree('shl__c908_8h_source.html',''); initRes
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                                      int32_t *bias, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc, int32_t out_zp,</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                                      int32_t *mult, int32_t *shift);</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="preprocessor">#ifdef SHL_UNUSED_REGISTER_BLK</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="keywordtype">void</span> shl_c908_reorder_input_z8_fp32(<span class="keywordtype">float</span> *src, <span class="keywordtype">float</span> *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keywordtype">void</span> shl_c908_gemm_8x8_fp32(<span class="keywordtype">float</span> *dst, <span class="keyword">const</span> <span class="keywordtype">float</span> *sa, <span class="keyword">const</span> <span class="keywordtype">float</span> *sb, <span class="keywordtype">float</span> *bias, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> k,</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                            <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="keywordtype">void</span> shl_c908_reorder_input_z16_fp16(__fp16 *src, __fp16 *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="keywordtype">void</span> shl_c908_gemm_8x16_fp16(__fp16 *dst, <span class="keyword">const</span> __fp16 *sa, <span class="keyword">const</span> __fp16 *sb, __fp16 *bias, <span class="keywordtype">int</span> m,</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                             <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="keywordtype">void</span> shl_c908_reorder_input_z24_fp32_v256(<span class="keywordtype">float</span> *src, <span class="keywordtype">float</span> *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="keywordtype">void</span> shl_c908_gemm_8x24_fp32_v256(<span class="keywordtype">float</span> *dst, <span class="keyword">const</span> <span class="keywordtype">float</span> *sa, <span class="keyword">const</span> <span class="keywordtype">float</span> *sb, <span class="keywordtype">float</span> *bias, <span class="keywordtype">int</span> m,</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                                  <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="keywordtype">void</span> shl_c908_reorder_input_z48_fp16_v256(__fp16 *src, __fp16 *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="keywordtype">void</span> shl_c908_gemm_8x48_fp16_v256(__fp16 *dst, <span class="keyword">const</span> __fp16 *sa, <span class="keyword">const</span> __fp16 *sb, __fp16 *bias,</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                                  <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">#ifdef SHL_USE_DOT_INT4</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="keywordtype">int</span> shl_c908_conv2d_init_int4(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *input, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *output,</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                              <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *kernel, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *bias,</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                              <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__conv2d__params.html">csinn_conv2d_params</a> *params);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keywordtype">void</span> shl_c908_f32_to_u8(<span class="keyword">const</span> <span class="keywordtype">float</span> *input, uint8_t *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                        uint32_t length);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keywordtype">void</span> shl_c908_f32_to_i8(<span class="keyword">const</span> <span class="keywordtype">float</span> *input, int8_t *output, int32_t offset, <span class="keywordtype">float</span> *scale,</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                        uint32_t length);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="preprocessor">#ifdef SHL_UNUSED_REGISTER_BLK</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="keywordtype">void</span> shl_c908_reorder_input_z8_fp32(<span class="keywordtype">float</span> *src, <span class="keywordtype">float</span> *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="keywordtype">void</span> shl_c908_gemm_8x8_fp32(<span class="keywordtype">float</span> *dst, <span class="keyword">const</span> <span class="keywordtype">float</span> *sa, <span class="keyword">const</span> <span class="keywordtype">float</span> *sb, <span class="keywordtype">float</span> *bias, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> k,</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                            <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="keywordtype">void</span> shl_c908_reorder_input_z16_fp16(__fp16 *src, __fp16 *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="keywordtype">void</span> shl_c908_gemm_8x16_fp16(__fp16 *dst, <span class="keyword">const</span> __fp16 *sa, <span class="keyword">const</span> __fp16 *sb, __fp16 *bias, <span class="keywordtype">int</span> m,</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                             <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="keywordtype">void</span> shl_c908_reorder_input_z24_fp32_v256(<span class="keywordtype">float</span> *src, <span class="keywordtype">float</span> *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="keywordtype">void</span> shl_c908_gemm_8x24_fp32_v256(<span class="keywordtype">float</span> *dst, <span class="keyword">const</span> <span class="keywordtype">float</span> *sa, <span class="keyword">const</span> <span class="keywordtype">float</span> *sb, <span class="keywordtype">float</span> *bias, <span class="keywordtype">int</span> m,</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                  <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="keywordtype">void</span> shl_c908_reorder_input_z48_fp16_v256(__fp16 *src, __fp16 *dst, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="keywordtype">void</span> shl_c908_gemm_8x48_fp16_v256(__fp16 *dst, <span class="keyword">const</span> __fp16 *sa, <span class="keyword">const</span> __fp16 *sb, __fp16 *bias,</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                                  <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> ldc);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="keywordtype">int</span> shl_c908_depthwise_conv2d_init_int4(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *input, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *output,</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                                        <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *kernel, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *bias,</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                                        <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__conv2d__params.html">csinn_conv2d_params</a> *params);</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">#ifdef SHL_USE_DOT_INT4</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="keywordtype">int</span> shl_c908_conv2d_init_int4(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *input, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *output,</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                              <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *kernel, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *bias,</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                              <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__conv2d__params.html">csinn_conv2d_params</a> *params);</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">#endif  </span><span class="comment">// INCLUDE_SHL_C908_H_</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="keywordtype">int</span> shl_c908_depthwise_conv2d_init_int4(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *input, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *output,</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                                        <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *kernel, <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__tensor.html">csinn_tensor</a> *bias,</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                                        <span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__conv2d__params.html">csinn_conv2d_params</a> *params);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="keyword">struct </span>shl_c908_option {</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keyword">struct </span>shl_rvv_option base;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>};</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="keywordtype">int</span> shl_c908_set_packn_layout(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess, <span class="keywordtype">bool</span> packn_layout);</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="keyword">struct </span>shl_c908_option *shl_c908_get_graph_option(<span class="keyword">struct</span> <a class="code hl_struct" href="structcsinn__session.html">csinn_session</a> *sess);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="preprocessor">#endif  </span><span class="comment">// INCLUDE_SHL_C908_H_</span></div>
 <div class="ttc" id="acsi__nn_8h_html"><div class="ttname"><a href="csi__nn_8h.html">csi_nn.h</a></div></div>
-<div class="ttc" id="astructcsinn__conv2d__params_html"><div class="ttname"><a href="structcsinn__conv2d__params.html">csinn_conv2d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:552</div></div>
-<div class="ttc" id="astructcsinn__fc__params_html"><div class="ttname"><a href="structcsinn__fc__params.html">csinn_fc_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:595</div></div>
-<div class="ttc" id="astructcsinn__pool__params_html"><div class="ttname"><a href="structcsinn__pool__params.html">csinn_pool_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:604</div></div>
-<div class="ttc" id="astructcsinn__tensor_html"><div class="ttname"><a href="structcsinn__tensor.html">csinn_tensor</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:474</div></div>
+<div class="ttc" id="astructcsinn__conv2d__params_html"><div class="ttname"><a href="structcsinn__conv2d__params.html">csinn_conv2d_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:553</div></div>
+<div class="ttc" id="astructcsinn__fc__params_html"><div class="ttname"><a href="structcsinn__fc__params.html">csinn_fc_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:596</div></div>
+<div class="ttc" id="astructcsinn__pool__params_html"><div class="ttname"><a href="structcsinn__pool__params.html">csinn_pool_params</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:605</div></div>
+<div class="ttc" id="astructcsinn__session_html"><div class="ttname"><a href="structcsinn__session.html">csinn_session</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:502</div></div>
+<div class="ttc" id="astructcsinn__tensor_html"><div class="ttname"><a href="structcsinn__tensor.html">csinn_tensor</a></div><div class="ttdef"><b>Definition:</b> csinn_data_structure.h:475</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
